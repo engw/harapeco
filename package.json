@@ -4,5 +4,8 @@
   "main": "index.js",
   "repository": "git@github.com:engw/harapeco.git",
   "author": "chck <iwazaki_yuki@cyberagent.co.jp>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^2.2.1"
+  }
 }
