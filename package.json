@@ -1,0 +1,8 @@
+{
+  "name": "harapeco",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:engw/harapeco.git",
+  "author": "chck <iwazaki_yuki@cyberagent.co.jp>",
+  "license": "MIT"
+}
