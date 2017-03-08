@@ -15,6 +15,12 @@ export default {
         exclude: /node_modules/,
         loader: 'babel'
       }] 
-    }
+    },
+    resolve: {
+      root: [
+        `${__dirname}/src`,
+      ],
+    },
+    devtool: 'inline-source-map'
   }
 }
