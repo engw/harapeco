@@ -1,5 +1,5 @@
 {
-  "preset": ["2015"],
+  "presets": ["es2015"],
   "env": {
     "test": {
       "plugins": ["espower"]
