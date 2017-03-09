@@ -5,10 +5,16 @@
   "repository": "git@github.com:engw/harapeco.git",
   "author": "chck <iwazaki_yuki@cyberagent.co.jp>",
   "license": "MIT",
+  "scripts": {
+    "build": "webpack --progress",
+    "dev": "webpack-dev-server --inline --hot",
+    "test": "karma start --single-run"
+  },
   "devDependencies": {
     "babel": "^6.23.0",
     "babel-loader": "^6.4.0",
     "babel-plugin-espower": "^2.3.2",
+    "babel-polyfill": "^6.23.0",
     "babel-preset-es2015": "^6.22.0",
     "babel-register": "^6.23.0",
     "karma": "^1.5.0",
@@ -17,10 +23,8 @@
     "karma-mocha-reporter": "^2.2.2",
     "mocha": "^3.2.0",
     "power-assert": "^1.4.2",
-    "webpack": "^2.2.1"
-  },
-  "scripts": {
-    "test": "karma start --single-run"
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.4.1"
   },
   "dependencies": {
     "nightmare": "^2.10.0"
