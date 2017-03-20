@@ -1,0 +1,20 @@
+import "babel-polyfill";
+import Nightmare from "nightmare";
+
+const nightmare = Nightmare({show: true});
+
+export default async(req, res) => {
+    await nightmare
+        .goto('https://duckduckgo.com')
+        .wait(1000)
+        .insert('#search_form_input_homepage', 'nightmare hangs')
+        .click('[type=submit]')
+        .wait(2000)
+        .pdf('./tmp/results.pdf')
+        .end()
+        .catch((error) => {
+            console.error('Search failed:', error); // eslint-disable-line
+        });
+
+    res.download('./tmp/results.pdf');
+};
