@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Category prompts that avoid AI-looking results
   const categoryPrompts = {
+    food: 'delicious appetizing food, gourmet cuisine, tasty dishes, beautiful food photography',
     nature: 'beautiful natural landscape, forest, mountains, or ocean scenery',
     animal: 'cute real animal, cat, dog, bird, or wildlife photography',
     space: 'stunning space scene, galaxies, nebula, or starfield',
