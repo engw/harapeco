@@ -110,8 +110,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }]
           }],
           generationConfig: {
-            responseModalities: ['image', 'text'],
-            responseMimeType: 'image/png'
+            responseModalities: ['IMAGE', 'TEXT']
           }
         })
       }
